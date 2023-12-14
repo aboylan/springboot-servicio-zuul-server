@@ -29,7 +29,7 @@ public class PreTiempoTranscurridoFilter extends ZuulFilter {
 		log.info(String.format("%s request enrutado a %s", request.getMethod(), request.getRequestURL().toString()));
 
 		Long tiempoInicio = System.currentTimeMillis();
-		request.setAttribute("tempoInicio", tiempoInicio);
+		request.setAttribute("tiempoInicio", tiempoInicio);
 
 		return null;
 	}
